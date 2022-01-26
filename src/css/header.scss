@@ -1,0 +1,49 @@
+.header{
+  padding: 11px 0;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.09);
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+  }
+  &__link{
+    @include text(normal, 12px, 21px, $black);
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+  }
+  &__list-desc{
+    display: flex;
+    align-items: center;
+    column-gap: 39px;
+    margin-right: 18px;
+  }
+  &__text{
+    @include text(normal, 12px, 21px, $black);
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+  }
+  &__list-icon{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  &__icon-last{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '0';
+      top: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

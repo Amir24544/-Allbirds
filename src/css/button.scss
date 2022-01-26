@@ -1,0 +1,59 @@
+.white-button{
+  background: #FFFFFF;
+  border-radius: 2px ;
+  @include text(bold, 14px, 16px, $black);
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  &:hover{
+    background: $black;
+    @include text(bold, 14px, 16px, #FFFFFF);
+  }
+}
+.black-button{
+  background: $black;
+  border-radius: 2px ;
+  @include text(bold, 14px, 16px, #FFFFFF);
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  &:hover{
+    background: #FFFFFF;
+    @include text(bold, 14px, 16px, $black);
+    border: 2px solid black;
+  }
+}
+.arrow_next{
+  position: absolute;
+  top: 45%;
+  right: -4%;
+  width: 48px;
+  height: 48px;
+  transform: rotate(45deg);
+}
+.arrow_prev{
+  position: absolute;
+  top: 45%;
+  left: -4%;
+  width: 48px;
+  height: 48px;
+  transform: rotate(45deg);
+}
+.icon-left-open{
+  position: absolute;
+  top: 35%;
+  right: 35%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-45deg);
+  color: black;
+}
+.icon-right-open{
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-45deg);
+  color: black;
+}

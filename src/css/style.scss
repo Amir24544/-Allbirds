@@ -1,0 +1,31 @@
+@import "../libs/owl-carousel/owl.carousel.min.css";
+@import "../libs/owl-carousel/owl.theme.default.min.css";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@import "enhancer";
+@import "button";
+@import "header";
+@import "runner";
+@import "favorites";
+@import "seasons";
+@import "nature";
+@import "climate";
+@import "first";
+@import "collection";
+@import "new";
+@import "stories";
+@import "footer";
+@import "media";

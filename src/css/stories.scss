@@ -1,0 +1,25 @@
+.stories{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 186px;
+  &__card-info{
+    padding-left: 25px;
+  }
+  &__title{
+    @include text(normal, 32px, 42px, $black);
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
+  &__subtitle{
+    @include text(bold, 22px, 29px, $black);
+    letter-spacing: 0.5px;
+    margin: 17px 0 10px;
+  }
+  &__text {
+    @include text(normal, 16px, 24px, $black);
+    letter-spacing: 0.5px;
+  }
+}
+.owl-carousel{
+  position: relative;
+}

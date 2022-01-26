@@ -1,0 +1,23 @@
+.climate{
+  padding-top: 138px;
+  &__img{
+    width: 100%;
+  }
+  &__content{
+    padding: 52px 0 119px;
+    text-align: center;
+  }
+  &__title{
+    @include text(bold, 32px, 42px, $black);
+    letter-spacing: 0.5px;
+  }
+  &__text{
+    @include text(normal, 16px, 24px, $black);
+    letter-spacing: 0.5px;
+    margin: 16px 0 26px;
+  }
+  &__btn{
+    width: 384px;
+    height: 48px;
+  }
+}

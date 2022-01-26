@@ -1,0 +1,19 @@
+.runner{
+  padding: 504px 0 56px;
+  background: url("../images/runner/bg.png");
+  &__title{
+    @include text(bold, 48px, 63px, #FFF);
+  }
+  &__subtitle{
+    @include text(bold, 16px, 24px, #FFF);
+    margin: 11px 0 24px;
+  }
+  &__btn{
+    width: 180px;
+    height: 48px;
+    margin-right: 24px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

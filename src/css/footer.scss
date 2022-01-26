@@ -1,0 +1,77 @@
+.footer{
+  padding: 72px 0 90px;
+  background-color: $black;
+  &__info{
+    display: flex;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    &_center{
+      margin: 0 206px 0 176px;
+      }
+    &-title{
+      @include text(normal, 14px, 21px, #FFF);
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: .5s;
+      &:hover{
+        color: red;
+        transition: .5s;
+      }
+    }
+  }
+  &__link{
+    @include text(normal, 12px, 12px, #FFF);
+    letter-spacing: 0.5px;
+    transition: .5s;
+    &:hover {
+      color: red;
+      transition: .5s;
+    }
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    &-title{
+      @include text(normal, 14px, 21px, #FFF);
+      margin-bottom: 21px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: .5s;
+      &:hover{
+        color: red;
+        transition: .5s;
+      }
+    }
+    &-text{
+      @include text(normal, 12px, 18px, #FFF);
+      letter-spacing: 0.5px;
+      transition: .5s;
+      &:hover{
+        color: red;
+        transition: .5s;
+      }
+    }
+  }
+  &__icon{
+    margin-right: 24px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__subtitle{
+    @include text(normal, 12px, 18px, #FFF);
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 126px;
+    transition: .5s;
+    &:hover{
+      color: red;
+      transition: .5s;
+    }
+  }
+}

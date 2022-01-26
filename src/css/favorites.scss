@@ -1,0 +1,103 @@
+.favorites {
+  padding: 119px 0 71px;
+  text-align: center;
+  &__list{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 46px;
+    &::before{
+      content: '';
+      position: absolute;
+      background-color: #D3D4D5;
+      width: 100%;
+      height: 2px;
+      bottom: -12px;
+    }
+  }
+  &__list {
+    display: flex;
+    column-gap: 132px;
+    margin-top: 32px
+  }
+  &__title {
+    @include text(bold, 32px, 42px, $black);
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  &__subtitle {
+    @include text(bold, 16px, 24px, $black);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+    &:hover::after{
+      content: '';
+      position: absolute;
+      width: 161px;
+      height: 2px;
+      background: #000000;
+      left: -45%;
+      bottom: -10px;
+      transition: .3s;
+    }
+  }
+  &__row{
+    display: none;
+  }
+  &__row_active{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__card{
+    position: relative;
+    width: calc(33.333% - 12px);
+    text-align: left;
+  }
+  &__buttons{
+    width: 278px;
+    height: 108px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  &__btn{
+    height: 48px;
+    width: 276px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    :last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__img{
+    width: 396px;
+    height: 396px;
+  }
+  &__text{
+    @include text(bold, 22px, 29px, $black);
+    letter-spacing: 0.5px;
+  }
+  &__subtext{
+    @include text(normal, 14px, 20px, $black);
+    letter-spacing: 0.4px;
+    margin-left: 12px;
+  }
+  &__info{
+    margin-top: 17px;
+    margin-left: 35px;
+  }
+  &__desc{
+    display: flex;
+    align-items: center;
+  }
+  &__line{
+    height: 1px;
+    width: 65%;
+    text-align: center;
+    background-color: #D3D4D5;
+    margin: 11px 0;
+  }
+}
